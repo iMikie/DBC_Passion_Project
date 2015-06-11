@@ -1,6 +1,5 @@
-#Passion Project
----
 ![Definition of Passion] (images/definition.png)
+---
 
 ###Mike Farr
 michaelmfarr@gmail.com <br>
