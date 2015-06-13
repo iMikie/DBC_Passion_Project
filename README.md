@@ -43,4 +43,78 @@ alt="Flashcard UI." width="560" height="315" border="10" /></a>
 
 The next step would be to look at creating an ActiveRecord/Sinatra app, then as a native app reusing the model and controller.  
 
+The Web App I'd like to do revolves around a sheet music database for my Men’s chorus at the St. Francis Yacht Club.  We have around 1,000 pieces of music with data on composer, lyricist, season (i.e. holiday), style, parts (i.e Tenor, Bass). We’d want to search on all those fields.  Additionally I think that storing the programs we sing gives the required many to many relation: Each song is in potentially many programs (think holiday favorites), each program contains many songs.  
+
+##User Stories
+
+* I want to list music titles
+* I want to search for music based on genre, season, arranger, composer, parts.
+* I want to select music for a program
+* I want to add new music to the database
+* I want to delete music from the database
+* I want to be able to view the PDF of the music
+* I'd like to print music.
+* I'd like to "print to iPad"
+* I'd like to see a calendar of upcoming events
+* I'd like to see a detail of those events
+* I'd like to see/hear past performances
+* I'd like to search past performances by date, title or season
+* I'd like to be able to add photos or recordings to the record of a performance
+* I'd like to be able to add mp3 to a record
+* I need to be able to log in securely
+* I need to be able to add or remove users
+* I need to be able to retrieve email addresses of users.
+* I'd like to be able to store meeting minutes, Create assignments
+* I'd like to be able to store the book and organizational records of skits or theatrical productions
+* I'd like to be able to store the financial results of our performances
+* I'd like to be able to see a preview of music (large thumbnail?)
+
+
+##MVP 
+* Viewing music.
+* Searching the library by Composer, Arranger, Title, Season
+* View sheet music PDFs
+* Add/remove users and provide authentication.  
+
+##Wireframes
+1. login screen
+2. 
+
+
+The club loaned me an intern who has around 800 pieces of sheet music scanned and we have meta data collected for about 500 of those.  
+
+More screen designs to come.
+
+###People
+* id
+* name
+* password
+* email
+* phone
+* status
+
+###Songs
+* Composer
+* Lyricist
+* Publisher
+* Title
+* Parts
+* URLs of scanned sheet music PDF
+* URLs to recordings
+
+###Events
+* id
+* description
+* location
+* call time
+* performance time
+* contact_id
+
+
+###Officials
+* Title
+* person_id
+* term
+
+
 
