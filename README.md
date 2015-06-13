@@ -41,40 +41,39 @@ That's all well and good, but how far can this go? In the next video I replace t
 " target="_blank"><img src="http://img.youtube.com/vi/37ZlKUeJXfM/0.jpg" 
 alt="Flashcard UI." width="560" height="315" border="10" /></a>
 
-The next step would be to look at creating an ActiveRecord/Sinatra app, then as a native app reusing the model and controller.  
+##The Application
 
-The Web App I'd like to do revolves around a sheet music database for my Men’s chorus at the St. Francis Yacht Club.  We have around 1,000 pieces of music with data on composer, lyricist, season (i.e. holiday), style, parts (i.e Tenor, Bass). We’d want to search on all those fields.  Additionally I think that storing the programs we sing gives the required many to many relation: Each song is in potentially many programs (think holiday favorites), each program contains many songs.  
+The Web App I'd like to build to experiment with all this revolves around a sheet music database for the Men’s chorus I belong to at the St. Francis Yacht Club.  We have around 1,000 pieces of music with data on composer, lyricist, season (i.e. holiday), style, parts (i.e Tenor, Bass). We’d want to search on all those fields.  Additionally I think that storing the programs we sing gives the required many to many relation: Each song is in potentially many programs (think holiday favorites), each program contains many songs.  
 
-##User Stories
+####Minimum Viable Product:  
+	1. Search the database on any of the fields (or combination thereof) below.  
+	2. CRUD on **songs** (i.e. correct mistakes.) 
+	3. Retrieve a PDF of a song
+	4. Secure login
+	5. CRUD on **users**
 
-* I want to list music titles
-* I want to search for music based on genre, season, arranger, composer, parts.
-* I want to select music for a program
-* I want to add new music to the database
-* I want to delete music from the database
-* I want to be able to view the PDF of the music
-* I'd like to print music.
-* I'd like to "print to iPad"
-* I'd like to see a calendar of upcoming events
-* I'd like to see a detail of those events
-* I'd like to see/hear past performances
-* I'd like to search past performances by date, title or season
-* I'd like to be able to add photos or recordings to the record of a performance
-* I'd like to be able to add mp3 to a record
-* I need to be able to log in securely
-* I need to be able to add or remove users
-* I need to be able to retrieve email addresses of users.
-* I'd like to be able to store meeting minutes, Create assignments
-* I'd like to be able to store the book and organizational records of skits or theatrical productions
-* I'd like to be able to store the financial results of our performances
-* I'd like to be able to see a preview of music (large thumbnail?)
+Here is the information we’ll be storing for each of our...
+####songs
+* song_id			—the folder number assigned by Herb 					
+* song_title
+* larger_work		––if the song is part of a larger work: “King And I”    
+* arranger1			
+* arranger2
+* voicing
+* description
+* pdf_url				
 
+####Performances
+* id
+* name
+* date
+* location
 
-##MVP 
-* Viewing music.
-* Searching the library by Composer, Arranger, Title, Season
-* View sheet music PDFs
-* Add/remove users and provide authentication.  
+####Songs_Performaces
+*id
+*performance_id
+*song_id
+
 
 ##Wireframes
 1. login screen
