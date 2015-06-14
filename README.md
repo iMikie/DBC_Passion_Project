@@ -63,6 +63,15 @@ Here is the information we’ll be storing for each of our...
 * description
 * pdf_url				
 
+####People
+
+###People
+* id
+* name
+* password
+* email
+* phone
+* 
 ####Performances
 * id
 * name
